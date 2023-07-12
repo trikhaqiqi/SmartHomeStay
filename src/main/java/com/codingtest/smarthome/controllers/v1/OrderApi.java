@@ -63,7 +63,7 @@ public class OrderApi {
     }
 
     @GetMapping
-    @ApiOperation(value = "API get additional facility", response = DatatableResponse.class)
+    @ApiOperation(value = "API get order", response = DatatableResponse.class)
     @ApiResponses( value = {
             @ApiResponse(code = 200, message = "Successfully"),
             @ApiResponse(code = 500, message = "Internal Server Error")
