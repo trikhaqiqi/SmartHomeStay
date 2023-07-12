@@ -18,10 +18,10 @@ Berikut adalah langkah-langkah untuk menjalankan aplikasi Smart Home Stay di kom
 git clone https://github.com/trikhaqiqi/SmartHomeStay.git
 ```
 
-2. **Konfigurasi database:** Buatlah database MySQL di komputer Anda dan konfigurasikan pengaturan koneksi database di file `application.properties` yang terletak di folder `src/main/resources`. Gantilah nilai berikut sesuai dengan pengaturan database Anda:
+2. **Konfigurasi database:** Buatlah database PostgreSQL di komputer Anda dan konfigurasikan pengaturan koneksi database di file `application.properties` yang terletak di folder `src/main/resources`. Gantilah nilai berikut sesuai dengan pengaturan database Anda:
 
 ```properties
-spring.datasource.url=jdbc:mysql://localhost:3306/nama_database?useSSL=false&serverTimezone=UTC
+spring.datasource.url=jdbc:postgresql://localhost:5432/smarthome?useSSL=false&serverTimezone=UTC
 spring.datasource.username=username_database
 spring.datasource.password=password_database
 ```
@@ -44,7 +44,7 @@ mvn spring-boot:run
 
 Aplikasi akan memulai proses kompilasi dan akan dijalankan di server lokal Anda.
 
-5. **Mengakses aplikasi:** Setelah aplikasi berhasil dijalankan, Anda dapat mengakses aplikasi Smart Home Stay melalui peramban web dengan URL [http://localhost:8080](http://localhost:8080).
+5. **Mengakses aplikasi:** Setelah aplikasi berhasil dijalankan, Anda dapat mengakses aplikasi Smart Home Stay melalui peramban web dengan URL [http://localhost:9035](http://localhost:9035).
 
 ## Menggunakan Aplikasi
 Setelah berhasil mengakses aplikasi Smart Home Stay, Anda dapat melakukan langkah-langkah berikut:
