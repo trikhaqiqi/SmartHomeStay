@@ -7,7 +7,7 @@ Sebelum menjalankan aplikasi Smart Home Stay, pastikan komputer Anda memenuhi pe
 
 - Java Development Kit (JDK) 8 atau yang lebih baru.
 - Maven - alat manajemen dependensi dan pembangunan proyek.
-- Database MySQL.
+- Database PostgreSQL.
 
 ## Menjalankan Aplikasi
 Berikut adalah langkah-langkah untuk menjalankan aplikasi Smart Home Stay di komputer Anda:
@@ -21,7 +21,7 @@ git clone https://github.com/trikhaqiqi/SmartHomeStay.git
 2. **Konfigurasi database:** Buatlah database PostgreSQL di komputer Anda dan konfigurasikan pengaturan koneksi database di file `application.properties` yang terletak di folder `src/main/resources`. Gantilah nilai berikut sesuai dengan pengaturan database Anda:
 
 ```properties
-spring.datasource.url=jdbc:postgresql://localhost:5432/smarthome?useSSL=false&serverTimezone=UTC
+spring.datasource.url=jdbc:postgresql://localhost:5432/smarthome
 spring.datasource.username=username_database
 spring.datasource.password=password_database
 ```
