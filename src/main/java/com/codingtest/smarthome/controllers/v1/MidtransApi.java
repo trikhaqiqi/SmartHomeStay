@@ -22,7 +22,7 @@ import javax.validation.Valid;
 
 @RestController
 @RequestMapping("/v1/midtrans")
-@Api(value = "API Midtrans", description = "API Terkait midtrans")
+@Api(value = "API Midtrans", description = "API Related to midtrans")
 public class MidtransApi {
 
     private static final Logger LOG = LogManager.getLogger(MidtransApi.class);
